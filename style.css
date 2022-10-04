@@ -28,13 +28,7 @@ body {
 
 }
 
-main {
-    background-image: url('images/illustrator.jpg');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: left -20%;
-
-}
+main {}
 
 .header {
     background-color: var(--primary);
@@ -97,7 +91,7 @@ main {
 }
 
 .mainBox {
-    margin: 100px 20px 10px 20px;
+    margin: 100px 20px 5px 20px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -196,6 +190,7 @@ input[type=text] {
     right: 0;
 
 }
+
 @media only screen and (max-width: 456px) {
     .header #logo {
         display: block;
@@ -209,6 +204,9 @@ input[type=text] {
 
 
     .mainBox {
+        margin: 100px 20px 5px 20px;
+        display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
     }
@@ -240,12 +238,19 @@ input[type=text] {
         width: 270px;
 
     }
+
     input[type=text] {
         margin: 10px;
     }
 }
 
 @media (max-width: 62em) {
+    .mainBox {
+        margin: 100px 20px 5px 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .mobile-navbar-btn {
         height: 4rem;
         width: 4rem;
