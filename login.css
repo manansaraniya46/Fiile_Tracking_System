@@ -1,29 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
 :root {
-    --col1: #1bbc9b;
-    --primary: #017e7e;
-    --background: #01e08f;
-    --font: #000000;
-    --underline: #379683;
-    --strip: #34495e;
+    --primary: #e94a5c;
+    --secondary: #fdc749;
+    --tertiary: #81bce8;
+    --font: black;
 }
 
+html,
 body {
-    font-family: 'Readex Pro', sans-serif;
     overflow: hidden;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+
+    background-image: url('images/3.jpg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom 50% right 90%;
 }
 
-main {
-    width: 250px;
-    margin: 100px auto;
+/* Start Design of Header */
+header {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .logo {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+    font-weight: 800;
+}
+
+.navigation {
+    margin: 0px 20px 0px 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation ul {
+
+    float: right;
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    color: black;
+
+}
+
+.navigation ul li {
+    float: left;
+    gap: 2.8rem;
+}
+
+.navigation ul li a {
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--font);
+}
+
+/* end design of header */
+
+section {
+    width: 300px;
+    float: right;
+    margin: 100px 120px;
     border: 2px solid;
     padding: 10px;
 
@@ -70,12 +122,12 @@ button:hover {
     color: var(--font);
 }
 
-main .image {
+section .image {
     text-align: center;
     margin-bottom: 30px;
 }
 
-main .image img {
+section .image img {
     height: 100px;
     border-radius: 50%;
 }
