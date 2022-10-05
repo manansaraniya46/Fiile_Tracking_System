@@ -33,10 +33,7 @@ main {
 main .qr
 {
     height:228px;
-    /* border:2px solid red; */
     display: block;
-    /* display: flex;
-    justify-content: center; */
 }
 .qr img
 {
