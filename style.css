@@ -75,7 +75,8 @@ nav .logo {
 /* Start Design of main content  */
 
 .mainBox {
-    margin: 224px 0px 0px 780px;
+    margin: 240px 120px;
+    float: right;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
