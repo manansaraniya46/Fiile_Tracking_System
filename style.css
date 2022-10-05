@@ -27,7 +27,7 @@ body {
 }
 main{
     background-image: url('images/1.jpg');
-    background-size: 50%;
+    background-size: 49%;
     background-repeat: no-repeat;
     background-position: left 50%;
 }
