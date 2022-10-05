@@ -1,42 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
 :root {
-    --col1: #1bbc9b;
-    --primary: #017e7e;
-    --background: #01e08f;
-    --font: #000000;
-    --underline: #379683;
-    --strip: #34495e;
+    --primary: #e94a5c;
+    --secondary: #fdc749;
+    --tertiary: #81bce8;
+    --font: black;
 }
 
-* {
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
-
-}
-
-html {
-    overflow: hidden;
-}
-
-body {
     font-family: 'Readex Pro', sans-serif;
 
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom 0% right 90%;
 }
 
-main {
-    width: 300px;
-    margin: 50px auto;
-    border: 2px solid;
+/* Start Design of Header */
+header {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .logo {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+    font-weight: 800;
+}
+
+.navigation {
+    margin: 0px 20px 0px 0px;
     padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-main .image {
+.navigation ul {
+
+    float: right;
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    color: black;
+
+}
+
+.navigation ul li {
+    float: left;
+    gap: 2.8rem;
+}
+
+.navigation ul li a {
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--font);
+}
+
+/* end design of header */
+
+
+section {
+    width: 300px;
+    float: right;
+    margin: 100px 120px;
+    border: 2px solid;
+}
+
+section .image {
     text-align: center;
     margin-bottom: 30px;
 }
 
-main .image img {
+section .image img {
     height: 100px;
     border-radius: 50%;
 }
@@ -54,9 +103,9 @@ form .radio {
 input[type=text],
 input[type=password],
 input[type=email] {
-    width: 190px;
+    width: 250px;
     height: 20px;
-    margin: 10px;
+    margin: 5px;
     padding: 12px 0px;
     font-size: 0.8rem;
     border: none;
@@ -69,7 +118,7 @@ input[type=email] {
 button {
     height: 35px;
     width: 130px;
-    margin: 50px;
+    margin: 30px;
     background-color: var(--primary);
     color: #FFFFFF;
     font-size: 1.2rem;
@@ -84,6 +133,5 @@ button {
 
 button:hover {
     background-color: transparent;
-    border: 2px solid var(--primary);
     color: var(--font);
 }

@@ -8,14 +8,31 @@
     <link rel="stylesheet" href="registration.css">
 </head>
 <body>
-    <main>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>File Transfer<br /> System</p>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Genrate QR</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
         <div class="image">
             <img src="images/profile_image.png" alt="">
         </div>
-        <form action="" method="post">
+        <form action="index.html" method="post">
             <input type="text" name="firstName" id="id_firstName" placeholder="First Name">
             <input type="text" name="lastName" id="id_lastName" placeholder="Last  Name">
-            <input type="email" name="email" id="id_email" placeholder="someone@example.com"><br />
+            <input type="email" name="email" id="id_email" placeholder="someone@example.com">
+            <input type="password" name="password" id="id_password" placeholder="Create Password">
+            <input type="password" name="password_confirm" id="id_password_confirm" placeholder="Confirm Password">
             <div class="radio">
                 <input type="radio" name="gender" id="id_maile" >
                 <label for="male">Male</label>
@@ -25,6 +42,6 @@
             <button type="submit" >Submit</button>
 
         </form>
-    </main>
+    </section>
 </body>
 </html>
