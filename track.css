@@ -128,7 +128,9 @@ input[type=text] {
     outline: none;
     border: none;
 }
-
+#btn1:hover {
+    color: var(--font);
+}
 .details {
     margin: 80px 0px 0px 0px;
     display: flex;

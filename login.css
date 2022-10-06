@@ -113,12 +113,9 @@ button {
     text-align: center;
     outline: none;
     border: none;
-    transition: background-color 3s;
 }
 
 button:hover {
-    background-color: transparent;
-    border: 2px solid var(--primary);
     color: var(--font);
 }
 
