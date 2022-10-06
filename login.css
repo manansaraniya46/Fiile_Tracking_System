@@ -131,6 +131,7 @@ section .image img {
     height: 100px;
     border-radius: 50%;
 }
-a{
-    text-align: center;
+#reg{
+    display: flex;
+    justify-content: center;
 }
