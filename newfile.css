@@ -19,7 +19,6 @@ body {
     font-family: 'Readex Pro', sans-serif;
 
     background-image: url('images/4.jpg');
-    img-opacity: 10%;
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: bottom 50% right 50%;
@@ -102,7 +101,7 @@ input[type=text] {
     width: 200px;
     height: 35px;
     outline: none;
-    border: 1px solid grey;
+    border: 2px solid black;
     border-radius: 3px;
     background: transparent;
     color: var(--primary);
@@ -122,6 +121,8 @@ input[type=text] {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 3;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 #addnew {
@@ -134,4 +135,8 @@ input[type=text] {
     display: flex;
     flex-direction: column;
     margin: 167px 0px 0px 50px;
+}
+.radio
+{
+    margin: 0px 0px 20px 0px;
 }
