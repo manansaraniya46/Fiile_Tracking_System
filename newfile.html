@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FTS:New File & Update</title>
+    <link rel="stylesheet" href="newfile.css">
 </head>
 <body>
     <header>
@@ -33,16 +34,27 @@
             <input type="text" name="color" id="color" placeholder="Color">
             <input type="text" name="officerName" id="officerName" placeholder="Officer Name">
             
-            <button type="submit" >Submit</button>
+            <button type="submit" >ADD NEW</button>
         </div>
+        <div class="seprateLine"></div>
         <div class="progress">
             <p class="tagline">UPDATE FILE PROGRESS</p>
             <input type="text" name="Tracking Id" id="trackingId" placeholder="Tracking Id">
-            <input type="text" name="status" id="status" placeholder="Status">
+            <div class="radio">
+                <input type="radio" name="status" id="approved">
+                <label for="status">Approved</label>
+        
+                <input type="radio" name="status" id="id_progress">
+                <label for="status">In Progress</label>
+        
+                <input type="radio" name="status" id="declined">
+                <label for="status">Declined</label>
+            </div>
             <input type="text" name="date" id="date" placeholder="Date Of Update">
             <input type="text" name="officerName" id="officerName" placeholder="officer Name">
+            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reson of declined">
             
-            <button type="submit" >Submit</button>
+            <button type="submit" >UPDATE</button>
         </div>
     </section>
 </body>
