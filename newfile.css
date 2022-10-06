@@ -19,6 +19,7 @@ body {
     font-family: 'Readex Pro', sans-serif;
 
     background-image: url('images/4.jpg');
+    img-opacity: 10%;
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: bottom 50% right 50%;
@@ -72,3 +73,65 @@ nav .logo {
 
 /* end design of header */
 
+section {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 35px;
+    width: 130px;
+    margin: 50px;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-align: center;
+    outline: none;
+    border: none;
+
+}
+button:hover {
+    color: var(--font);
+}
+input[type=text] {
+    width: 200px;
+    height: 35px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background: transparent;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1px 23px 23px 23px;
+}
+
+.newfile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-right: 5px solid gray;
+
+}
+
+.tagline {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#addnew {
+    margin: 0px auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    margin: 167px 0px 0px 50px;
+}
