@@ -27,20 +27,19 @@
         <div class="image">
             <img src="images/profile_image.png" alt="">
         </div>
-        <form action="index.html" method="post">
-            <input type="text" name="firstName" id="id_firstName" placeholder="First Name">
-            <input type="text" name="lastName" id="id_lastName" placeholder="Last  Name">
-            <input type="email" name="email" id="id_email" placeholder="someone@example.com">
-            <input type="password" name="password" id="id_password" placeholder="Create Password">
-            <input type="password" name="password_confirm" id="id_password_confirm" placeholder="Confirm Password">
+        <form action="registration.php" method="post">
+            <input type="text" name="firstname" id="id_firstName" placeholder="First Name">
+            <input type="text" name="lastname" id="id_lastName" placeholder="Last  Name">
             <div class="radio">
                 <input type="radio" name="gender" id="id_maile" >
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="id_female" >
                 <label for="female">Female</label>
             </div>
+            <input type="email" name="email" id="id_email" placeholder="someone@example.com">
+            <input type="password" name="password" id="id_password" placeholder="Create Password">
+            <input type="password" name="password_confirm" id="id_password_confirm" placeholder="Confirm Password">
             <button type="submit" >Submit</button>
-
         </form>
     </section>
 </body>
